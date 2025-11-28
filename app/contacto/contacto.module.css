@@ -1,0 +1,131 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: #f8efdf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 820px;
+  text-align: center;
+}
+
+/* TÍTULO PRINCIPAL */
+.title {
+  font-size: 48px;           /* Grande, premium */
+  font-weight: 700;
+  color: #5c3d2e;            /* Marrón premium */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+/* SUBTÍTULO */
+.subtitle {
+  font-size: 20px;
+  color: #8d6f5a;            /* Marrón suave */
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contactOptions {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 40px 0 60px;
+}
+
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iconCircle {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border: 2px solid #f28c28;      /* naranja premium */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f28c28;
+  font-size: 28px;
+  transition: 0.2s;
+}
+
+.iconCircle:hover {
+  transform: translateY(-5px);
+}
+
+.iconLabel {
+  margin-top: 10px;
+  color: #6a4c34;
+  font-weight: 500;
+}
+
+.form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.field label {
+  margin-bottom: 5px;
+  color: #6a4c34;
+  font-weight: 500;
+}
+
+.field input,
+.field textarea {
+  border: 2px solid #f28c28;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #e76700;
+}
+
+.button {
+  width: 100%;
+  background: #f28c28;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #e76700;
+  transform: translateY(-2px);
+}

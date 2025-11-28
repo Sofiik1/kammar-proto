@@ -1,0 +1,93 @@
+.section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #fdf7ed; /* antiquemarine */
+}
+
+/* ---------------- BLOBS ---------------- */
+
+.topBlob {
+  position: absolute;
+  top: -15%;
+  right: -20%;
+  width: 60%;
+  height: 70%;
+  background: #b8875c;
+  border-bottom-left-radius: 70%;
+  z-index: 1;
+}
+
+.bottomBlob {
+  position: absolute;
+  bottom: -15%;
+  left: -20%;
+  width: 60%;
+  height: 70%;
+  background: #b8875c;
+  border-top-right-radius: 70%;
+  z-index: 1;
+}
+
+/* ---------------- IMÁGENES ---------------- */
+
+.circleImg {
+  border-radius: 70%;
+  object-fit: cover;
+}
+
+.topImage {
+  position: absolute;
+  top: 12%;
+  right: 5%;
+  width: 340px;
+  height: 340px;
+  z-index: 5;
+}
+
+.bottomImage {
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+  width: 340px;
+  height: 340px;
+  z-index: 5;
+}
+
+/* ---------------- TARJETAS ---------------- */
+
+.cardTop,
+.cardBottom {
+  position: absolute;
+  width: 320px;
+  background: white;
+  padding: 24px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 34px rgba(0,0,0,0.12);
+  z-index: 10;
+}
+
+.cardTop {
+  top: 40%;
+  left: 10%;
+}
+
+.cardBottom {
+  bottom: 30%;
+  right: 10%;
+}
+
+.cardTop h3,
+.cardBottom h3 {
+  color: #402e21;
+  font-size: 26px;
+  margin: 0 0 8px 0;
+}
+
+.cardTop p,
+.cardBottom p {
+  margin: 0;
+  font-size: 16px;
+  color: #402e21;
+}

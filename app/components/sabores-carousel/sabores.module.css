@@ -1,0 +1,129 @@
+.wrapper {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.2rem;        /* Tamaño grande pero elegante */
+  font-weight: 700;         /* Bien marcado */
+  color: #4a3d2f;
+  margin-left: 45%;  
+  margin-bottom: 33%;         /* Un marrón suave tipo hummus (ajustalo si querés) */
+}
+
+
+/* Imagen principal */
+.main {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  left: 60px;
+  top: 70px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 3;
+}
+
+/* Mini imágenes del semicírculo */
+.small {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.7;
+  position: absolute;
+  left: -80px;
+  transition: 0.3s ease;
+}
+
+/* Siguiente (arriba curva izquierda) */
+.top {
+  top: -10px; 
+  transform: rotate(-10deg);
+}
+
+/* Anterior (abajo curva izquierda) */
+.bottom {
+  top: 370px;
+  transform: rotate(10deg);
+}
+
+/* Panel derecho */
+
+.info {
+  position: absolute;
+  bottom: 23%;
+  right: 13%;
+  width: 450px;
+  padding: 35px;
+  border-radius: 32px;
+  color: white;
+  
+  background: rgba(0, 0, 0, 0.28); /* semitransparente */
+  backdrop-filter: blur(6px);      /* efecto premium */
+  box-shadow: 0 12px 28px rgba(0,0,0,0.20);
+  
+  transform: translateY(0);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+.info:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.26);
+}
+
+.info h2 {
+  margin: 0 0 18px;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 1.6;
+  white-space: pre-line; /* para respetar saltos de línea */
+}
+
+.cta {
+  background: antiquewhite;
+  color: black;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 50px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.cta:hover {
+  background: #ff8c41;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* CURVA Superior */
+.topCurve { 
+  position: absolute; 
+  bottom: -590; 
+  left: 0; 
+  width: 100%; 
+  z-index: 3; } 
+
+.topCurve svg { 
+  width: 100%; 
+  height: 100px; 
+  display: block; }

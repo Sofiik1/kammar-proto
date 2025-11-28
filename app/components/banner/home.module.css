@@ -1,0 +1,79 @@
+.heroWrapper {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+.bgImage {
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Contenedor del hero */
+.hero {
+  position: relative;
+  z-index: 2; /* queda arriba de la imagen */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 80px;
+}
+
+/* Overlay premium */
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(2px);
+  z-index: -1; /* queda entre texto e imagen */
+}
+
+/* Título */
+.heroTitle {
+  margin-top: 5%;
+  font-size: 5rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+/* Subtítulo */
+.heroSubtitle {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: 500px;
+  color: #fff;
+}
+
+/* Curva inferior */
+.bottomCurve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.bottomCurve svg {
+  width: 100%;
+  height: 190px;
+  display: block;
+}
+
+/* Mobile fix */
+@media (max-width: 900px) {
+  .hero {
+    padding-left: 30px;
+  }
+  .heroTitle {
+    font-size: 3rem;
+  }
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,61 @@
+.nav {
+  width: 100%;
+  background: #FBF7F0; /* crema Kamar */
+  border-bottom: 2.5px solid #f28c28;
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.link {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #4F3E32; /* Marrón suave */
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.link:hover {
+  color: #E86C28; /* Naranja Kamar */
+}
+
+/* ACTIVO */
+.active {
+  color: #E86C28;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .links {
+    gap: 1.5rem;
+  }
+
+  .link {
+    font-size: 0.95rem;
+  }
+}
